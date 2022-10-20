@@ -14,8 +14,13 @@ window.addEventListener("load", () => {
    context.strokeRect(400, 50, 250, 250);
 
    context.beginPath();
-   context.moveTo(200,300);
-   context.lineTo(0,10);
+   // (eixo x, eixo y, esticando)
+   context.moveTo(820,300);
+   // (eixo x, qt +, + afasta / eixo y, qt +, + afasta, com a ponta do inicio do desenho)
+   context.lineTo(900,50);
+   context.strokeStyle = "blue";
+   context.lineTo(1000,300);
+   context.lineTo(818,300);
    context.stroke();
    
 });
